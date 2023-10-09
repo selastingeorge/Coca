@@ -1,0 +1,10 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+
+html,body 
+{
+	margin: 0px;
+	box-sizing: border-box;
+}

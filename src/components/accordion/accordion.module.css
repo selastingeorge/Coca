@@ -1,0 +1,111 @@
+.accordion
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap:28px
+}
+.accordion-header
+{
+    color: #19191C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.accordion-header>svg
+{
+    flex-shrink: 0;
+}
+
+.accordion-content
+{
+    display: none;
+    color: #4D4E57;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.2px;
+}
+
+.accordion-content.expanded
+{
+    display: flex;
+}
+
+.accordion-item
+{
+    width: 100%;
+    display: none;
+    padding: 28px;
+    padding-top: 0px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.accordion-item.show
+{
+    display: flex !important;
+    flex-direction: column;
+}
+
+.accordion-item.expanded .accordion-header
+{
+    color: #FF5C00;
+}
+
+@media screen and (max-width:992px)
+{
+    .accordion-header
+    {
+        font-size: 20px;
+    }
+
+    .accordion-header > svg
+    { 
+        width: 24px;
+        height: 24px;
+    }
+
+    .accordion-content
+    {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:567px)
+{
+    .accordion-header
+    {
+        font-size: 18px;
+    }
+
+    .accordion-header > svg
+    { 
+        width: 24px;
+        height: 24px;
+    }
+
+    .accordion-content
+    {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .accordion-item
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,234 @@
+.navbar
+{
+    width: 100%;
+    padding: 24px 0px;
+    transition: max-height 300ms, box-shadow 300ms;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    box-shadow:none;
+}
+
+.navbar.open
+{
+    max-height: 465px;
+    box-shadow: 0px 64px 64px 0 rgba(15, 15, 15, 0.1);
+}
+
+.navbar.open  .nav-links
+{
+    opacity: 1;
+}
+
+.logo-link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo
+{
+    width: auto;
+}
+
+.menu-btn
+{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn::after,.menu-btn::before
+{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 16px;
+    left: 6px;
+    background: #232124;
+    transition: all 200ms ease-out;
+    border-radius: 2px;
+}
+
+.menu-btn::after
+{
+    transform: translateY(3px);
+}
+
+.menu-btn::before
+{
+    transform: translateY(-4px);
+}
+
+.menu-btn.active::after
+{
+    transform: translateY(0) rotate(45deg);
+}
+
+.menu-btn.active::before
+{
+    transform: translateY(0) rotate(-45deg);
+}
+
+.mobile-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.nav-link
+{
+    color: #232124;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: background-color 200ms linear,color 200ms linear;
+}
+
+.nav-link:hover,.nav-link.active
+{
+    background-color: #232124;
+    color: #fff;
+}
+
+.signin-btn
+{
+    padding: 12px 24px;
+    border: 1px solid #FF5C00;
+    color: #FF5C00;
+    border-radius: 58px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-feature-settings: 'ss02' on, 'clig' off, 'liga' off;
+    transition: background-color 200ms linear,color 200ms linear;
+}
+
+.signin-btn:hover
+{
+    background-color: #FF5C00;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.signin-btn.alt
+{
+    display: none;
+    margin-left: auto;
+    margin-right: 30px;
+    padding: 9px 25px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:567px)
+{
+    .signin-btn.alt
+    {
+        display: none !important;
+    }
+
+    .signin-btn
+    {
+        display: flex !important;
+        align-self: stretch;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-links
+    {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E6E8EC;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .logo
+    {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:992px)
+{
+    .mobile-header
+    {
+        width: 100%;
+    }
+
+    .nav-container
+    {
+        flex-direction: column;
+    }
+
+    .menu-btn
+    {
+        display: flex;
+    }
+
+    .navbar
+    {
+        max-height: 44px;
+        overflow: hidden;
+    }
+
+    .nav-links
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 30px;
+        opacity: 0;
+        transition-duration: 300ms;
+        transition-delay: 100ms;
+    }
+
+    .navbar.open .nav-links
+    {
+        transition-delay: 0ms;
+    }
+
+    .nav-link
+    {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    .signin-btn.alt
+    {
+        display: block;
+    }
+
+    .signin-btn
+    {
+        display: none;
+    }
+    
+}

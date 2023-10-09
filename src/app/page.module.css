@@ -1,0 +1,672 @@
+.partners-section
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.partners-swiper
+{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+
+.partners-wiper-slide
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo
+{
+    width: 80px;
+    height: auto;
+    position: relative;
+}
+
+.partners-caption
+{
+    font-size: 18px;
+    color: #19191C;
+    font-weight: 500;
+}
+
+.features-section
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.features-title
+{
+    color: #19191C;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.92px;
+    margin: 0px;
+}
+
+.title-break
+{
+    display: block;
+}
+
+/* Packages Section */
+
+.packages-section
+{
+    width: 100%;
+}
+
+.packages-title-wrap
+{
+    display: flex;
+    gap: 20px;
+}
+
+.packages-title
+{
+    color: #19191C;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 100% */
+    letter-spacing: -1.92px;
+    margin: 0px;
+}
+
+.package-plan-selector-wrap
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 8px;
+    min-width: 185px;
+    align-items: center;
+    justify-content: center;
+}
+
+.package-selector-plan-btn-wrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-monthly-selector
+{
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #19191C;
+    background-color: transparent;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: var(--poppins);
+}
+
+.btn-monthly-selector:hover,.btn-yearly-selector:hover
+{
+    background-color: #f0f0f0;
+}
+
+.btn-yearly-selector
+{
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #19191C;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+
+.plan-active
+{
+    color: #fff !important;
+    background-color: #19191C !important;
+}
+
+.plan-info-wrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text
+{
+    color: #19191C;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.12px;
+}
+
+.info-text i
+{
+    color: #FF5C00;
+}
+
+.info-text .confetti
+{
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* testimonials wide section */
+
+.testimonials-wide-section
+{
+    width: 100%;
+    display: flex;
+    margin-top: 120px;
+    gap: 64px;
+    padding-bottom: 120px;
+}
+
+.features
+{
+    width: 100%;
+}
+
+.testimonials
+{
+    width: 100%;
+}
+
+.features-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.feature-item
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.features > .features-title
+{
+    max-width: 500px;
+}
+
+.feature-content
+{
+    color: #4D4E57;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.18px;
+}
+
+.feature-icon
+{
+    padding: 16px;
+}
+
+.feature-title
+{
+    color: #19191C;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin: 0px;
+    margin-top: 24px;
+}
+
+.feature-content
+{
+    color: #4D4E57;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.16px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.testimonials
+{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.testimonials-card
+{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.testimonials-text
+{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.user-details
+{
+    display: flex;
+    margin-top: auto;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user-info
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details > img
+{
+    border-radius: 100px;
+}
+
+.user-details .name
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.user-details .role
+{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+.testimonials-card:nth-of-type(1)
+{
+    background-color: #F1FAEB;
+    color: #38715B;;
+}
+
+.testimonials-card:nth-of-type(2)
+{
+    background-color: #ECF6FF;
+    color: #3871A5;
+}
+
+.testimonials-card:nth-of-type(3)
+{
+    background-color: #FFF5EE;
+    color: #DC8558;
+}
+
+/* Faq section */
+
+.faq
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 120px;
+}
+
+.faq-title-wrap
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:32px;
+}
+
+.faq-title
+{
+    color: #19191C;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.92px;
+    margin: 0px;
+    max-width: 640px;
+}
+
+.faq-searchbox
+{
+    width: 100%;
+    height: 70px;
+    border-radius: 58px;
+    border: 1px solid #e4e4e4;
+    padding: 8px;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    max-width: 460px;
+}
+
+
+.faq-searchbox button
+{
+    display: flex;
+    padding: 15px 24px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--poppins);
+    background-color: #FF5C00;
+    border-radius: 58px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.faq-searchbox button:hover
+{
+    background-color: #ff4500;
+}
+
+.search-input
+{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    border: none;
+}
+
+.search-input::placeholder
+{
+    color: #C2C2C2;
+    font-weight: 300;
+}
+
+.search-input::-webkit-search-cancel-button
+{
+    display: none;
+}
+
+.faq-split-section
+{
+    display: flex;
+    gap: 80px;
+}
+
+.faq-btn-wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+
+}
+
+.faq-accordion-wrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.btn-faq-selector
+{
+    color: #4D4E57;
+    font-size: 16px;
+    font-style: normal;
+    font-family: var(--poppins);
+    font-weight: 500;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px 24px;
+}
+
+.btn-faq-selector.active
+{
+    color: #FF5C00;
+    border: 1px solid #FF5C00;
+}
+
+.btn-faq-selector:hover
+{
+    color: #FF5C00;
+}
+
+.faq-accordion-wrap
+{
+    width: 100%;
+}
+
+@media screen and (max-width:1300px)
+{   
+    .faq-title
+    {
+        max-width: unset;
+        text-align: center;
+    }
+
+    .faq-searchbox
+    {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .faq-title-wrap
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1024px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 4rem;
+    }
+
+    .testimonials-wide-section
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:992px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 3.3rem;
+        line-height: unset !important;
+    }
+
+    .features-title > .title-break
+    {
+        display: none;
+    }
+
+    .faq-split-section
+    {
+        flex-direction: column;
+    }
+
+    .faq-btn-wrap
+    {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 2.8rem;
+    }
+
+    .packages-title
+    {
+        text-align: center;
+    }
+
+    .packages-title-wrap
+    {
+        flex-direction: column;
+    }
+
+    .package-plan-selector-wrap
+    {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:567px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 3rem !important;
+    }
+
+    .features-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials
+    {
+        gap: 40px;
+    }
+
+    .testimonials-text
+    {
+        font-size: 16px;
+        order: 2;
+    }
+
+    .user-details
+    {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .user-info
+    {
+        margin: auto;
+    }
+
+    .faq-searchbox > button > span 
+    {
+        display: none;
+    }
+
+    .btn-faq-selector
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:425px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 2.3rem !important;
+    }
+
+    .faq-searchbox 
+    {
+        height: 55px;
+    }
+
+    .faq-searchbox > input 
+    {
+        font-size: 13px;
+    }
+
+    .faq-searchbox > button
+    {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .faq-searchbox > button > svg
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+    .faq-btn-wrap
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:350px)
+{   
+    .features-title,.packages-title,.faq-title
+    {
+        font-size: 2rem !important;
+    }
+}
