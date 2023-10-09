@@ -10,33 +10,33 @@ import { Container } from '@/components/container/container';
 import { FeatureBox } from '@/components/feature-box/feature-box';
 import { PackageTable } from '@/components/package-table/package-table';
 import { Accordion } from '@/components/accordion/accordion';
-import {partners,features,testimonials,faq,packages} from './data'
+import { partners, features, testimonials, faq } from './data'
 
 export default function Home() {
 	const swiperRef = useRef();
-	const [plan,setPlan] = useState('monthly');
-	const [category,setCategory] = useState('general');
+	const [plan, setPlan] = useState('monthly');
+	const [category, setCategory] = useState('general');
 
 	return (
 		<main>
-			<Heroarea/>
+			<Heroarea />
 			<Container>
 				<section className={styles['partners-section']}>
 					<p className={styles['partners-caption']}>Trusted by over 50 thousand restaurants in 10+ countries</p>
-					<Swiper className={styles['partners-swiper']} spaceBetween={20} slidesPerView={2} 
-						modules={[Navigation, Autoplay]} onBeforeInit={(swiper) => { swiperRef.current = swiper; }} 
+					<Swiper className={styles['partners-swiper']} spaceBetween={20} slidesPerView={2}
+						modules={[Navigation, Autoplay]} onBeforeInit={(swiper) => { swiperRef.current = swiper; }}
 						autoplay={{ delay: 2500, disableOnInteraction: false, }}
 						breakpoints={{
 							567: {
-							  slidesPerView: 3,
+								slidesPerView: 3,
 							},
 							768: {
-							  slidesPerView: 4,
+								slidesPerView: 4,
 							},
 							992: {
 								slidesPerView: 6,
 							},
-						  }}>
+						}}>
 						{partners.map((partner, index) => (
 							<SwiperSlide key={index} className={styles['partners-wiper-slide']}>
 								<Image className={styles['partner-logo']} src={`/assets/${partner.url}`} width={80} height={70} alt={partner.name}></Image>
@@ -57,18 +57,18 @@ export default function Home() {
 						<h1 className={styles['packages-title']}>Packages for your business</h1>
 						<div className={styles['package-plan-selector-wrap']}>
 							<div className={styles['package-selector-plan-btn-wrap']}>
-								<button className={`${styles['btn-monthly-selector']} ${(plan=='monthly')?styles['plan-active']:''}`} onClick={()=>setPlan('monthly')}>Month</button>
-								<button className={`${styles['btn-yearly-selector']} ${(plan=='yearly')?styles['plan-active']:''}`} onClick={()=>setPlan('yearly')}>Annual</button>
+								<button className={`${styles['btn-monthly-selector']} ${(plan == 'monthly') ? styles['plan-active'] : ''}`} onClick={() => setPlan('monthly')}>Month</button>
+								<button className={`${styles['btn-yearly-selector']} ${(plan == 'yearly') ? styles['plan-active'] : ''}`} onClick={() => setPlan('yearly')}>Annual</button>
 							</div>
 							<div className={styles['plan-info-wrap']}>
 								<Image src='assets/info.svg' width={20} height={20} alt='Info'></Image>
 								<span className={styles['info-text']}>Annual - <i>2 months free</i><i className={styles['confetti']}>🎉</i></span>
 							</div>
 						</div>
-					</div>	
-					<PackageTable duration={plan} packages={packages}></PackageTable>
+					</div>
+					<PackageTable duration={plan}></PackageTable>
 				</section>
-				
+
 				<section className={styles['testimonials-wide-section']}>
 					<div className={styles['features']}>
 						<h2 className={styles['features-title']}>Ease in the Hand</h2>
@@ -83,7 +83,7 @@ export default function Home() {
 									<p className={styles['feature-content']}>{feature.content}</p>
 								</div>
 							))}
-							
+
 						</div>
 					</div>
 
@@ -102,7 +102,7 @@ export default function Home() {
 								</div>
 							</div>
 						))}
-						
+
 					</div>
 				</section>
 
@@ -113,7 +113,7 @@ export default function Home() {
 							<input className={styles['search-input']} type={'search'} placeholder='Type your question here'></input>
 							<button className={styles['search-btn']} aria-label='search'>
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M21 21.0068L16.65 16.6568M19 11.0068C19 15.4251 15.4183 19.0068 11 19.0068C6.58172 19.0068 3 15.4251 3 11.0068C3 6.58856 6.58172 3.00684 11 3.00684C15.4183 3.00684 19 6.58856 19 11.0068Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+									<path d="M21 21.0068L16.65 16.6568M19 11.0068C19 15.4251 15.4183 19.0068 11 19.0068C6.58172 19.0068 3 15.4251 3 11.0068C3 6.58856 6.58172 3.00684 11 3.00684C15.4183 3.00684 19 6.58856 19 11.0068Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 								</svg>
 								<span>Search</span>
 							</button>
@@ -122,10 +122,10 @@ export default function Home() {
 
 					<div className={styles['faq-split-section']}>
 						<div className={styles['faq-btn-wrap']}>
-							<button className={`${styles['btn-faq-selector']} ${(category=='general')?styles['active']:''}`} onClick={()=>setCategory('general')}>General</button>
-							<button className={`${styles['btn-faq-selector']} ${(category=='transactions')?styles['active']:''}`} onClick={()=>setCategory('transactions')}>Transactions</button>
-							<button className={`${styles['btn-faq-selector']} ${(category=='payment')?styles['active']:''}`} onClick={()=>setCategory('payment')}>Payment</button>
-							<button className={`${styles['btn-faq-selector']} ${(category=='others')?styles['active']:''}`} onClick={()=>setCategory('others')}>Others</button>
+							<button className={`${styles['btn-faq-selector']} ${(category == 'general') ? styles['active'] : ''}`} onClick={() => setCategory('general')}>General</button>
+							<button className={`${styles['btn-faq-selector']} ${(category == 'transactions') ? styles['active'] : ''}`} onClick={() => setCategory('transactions')}>Transactions</button>
+							<button className={`${styles['btn-faq-selector']} ${(category == 'payment') ? styles['active'] : ''}`} onClick={() => setCategory('payment')}>Payment</button>
+							<button className={`${styles['btn-faq-selector']} ${(category == 'others') ? styles['active'] : ''}`} onClick={() => setCategory('others')}>Others</button>
 						</div>
 
 						<div className={styles['faq-accordion-wrap']}>

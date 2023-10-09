@@ -7,8 +7,119 @@ import styles from './package-table.module.css'
 export const PackageTable = (props) => {
 
     {/* Using json data to build the table automatically */}
-    
-    const packages = props.packages;
+    {/* Directly using data here to improve performance by avoiding imports */}
+    const packages = {
+        monthly: {
+            price:{
+                basic:'$20',
+                business:'$30',
+                enterprise:'$50'
+            },
+            options: [{
+                name:'Unlimited Transactions',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Multi Outlet',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Report Featured',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Inventory Management',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Direct report & teamreview',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Emplovee Management System',
+                basic:false,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'CRM And Promotion Features',
+                basic:false,
+                business:false,
+                enterprise:true,
+            },
+            {
+                name:'Third Party Application Integration',
+                basic:false,
+                business:false,
+                enterprise:true,
+            }]
+        },
+        annually: {
+            price:{
+                basic:'$200',
+                business:'$300',
+                enterprise:'$500'
+            },
+            options: [{
+                name:'Unlimited Transactions',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Multi Outlet',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Report Featured',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Inventory Management',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'Direct report & teamreview',
+                basic:true,
+                business:false,
+                enterprise:true,
+            },
+            {
+                name:'Emplovee Management System',
+                basic:true,
+                business:true,
+                enterprise:true,
+            },
+            {
+                name:'CRM And Promotion Features',
+                basic:false,
+                business:false,
+                enterprise:true,
+            },
+            {
+                name:'Third Party Application Integration',
+                basic:true,
+                business:true,
+                enterprise:true,
+            }]
+        }
+    }
     return(
         <div>
             {/* Monthly Plan */}
