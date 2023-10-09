@@ -24,7 +24,7 @@ export const Footer = (props) => {
                             </a>
                         </div>
                     </Container>
-                    <Image className={styles['footer-banner']} src='/assets/footer-banner.svg' width={900} height={900} alt='Footer Banner'></Image>
+                    <Image className={styles['footer-banner']} src='/assets/footer-banner.png' width={1140} height={900} alt='Footer Banner'></Image>
                 </div>
             </div>
             <div className={styles['footer-bottom']}>
