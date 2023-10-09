@@ -17,6 +17,8 @@ export const metadata = {
     keywords: ['Coca POS', 'Point of Sale System', 'POS Software', 'Business Management', 'Inventory Management', 'Sales Optimization']
 }
 
+// Home Page Layout
+
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">

@@ -1,3 +1,8 @@
+/*
+    Component Name : Conatiner
+    Usage: Wrap Content width Auto Adjustable Padding
+*/
+
 'use client'
 
 import styles from './container.module.css';

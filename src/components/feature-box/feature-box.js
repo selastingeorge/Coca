@@ -1,3 +1,10 @@
+/*
+    Component Name : FeatureBox
+    Usage: Component Shows Feture title,content etc..
+*/
+
+'use client'
+
 import styles from './feature-box.module.css';
 
 export const FeatureBox = (props) => {

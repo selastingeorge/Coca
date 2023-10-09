@@ -3,14 +3,14 @@
 import Image from 'next/image';
 import styles from './page.module.css'
 import { Heroarea } from '@/components/heroarea/heroarea';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Responsive } from 'swiper/modules';
 import { Container } from '@/components/container/container';
 import { FeatureBox } from '@/components/feature-box/feature-box';
 import { PackageTable } from '@/components/package-table/package-table';
 import { Accordion } from '@/components/accordion/accordion';
-import {partners,features,testimonials,faq} from './data'
+import {partners,features,testimonials,faq,packages} from './data'
 
 export default function Home() {
 	const swiperRef = useRef();
@@ -66,7 +66,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>	
-					<PackageTable duration={plan}></PackageTable>
+					<PackageTable duration={plan} packages={packages}></PackageTable>
 				</section>
 				
 				<section className={styles['testimonials-wide-section']}>
@@ -105,7 +105,6 @@ export default function Home() {
 						
 					</div>
 				</section>
-
 
 				<section className={styles['faq']}>
 					<div className={styles['faq-title-wrap']}>

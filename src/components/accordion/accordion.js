@@ -1,3 +1,10 @@
+/*
+    Component Name : Accordion
+    Usage: FAQ Dropdown
+*/
+
+"use client"
+
 import styles from './accordion.module.css';
 import React, { useState } from 'react';
 

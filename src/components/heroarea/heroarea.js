@@ -1,3 +1,8 @@
+/*
+    Component Name : Heroarea
+    Usage: Website Hero area
+*/
+
 "use client"
 
 import 'swiper/css';

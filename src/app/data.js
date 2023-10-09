@@ -1,4 +1,8 @@
-/* Various placeholder data used in the pages*/
+/* 
+    Various placeholder data used in the pages,
+    This way size of the file can be reduced by removing multiple tags and
+     dynamically generate them during JavaScript execution
+*/
 
 export const partners = [
     {
@@ -146,4 +150,117 @@ export const faq = [{
     category:'others',
     question:'How often does Coca POS receive updates, and are they automatic?',
     answer:'Coca POS receives regular updates to enhance features, security, and performance. These updates can be scheduled to occur automatically or manually, depending on your preferences. We recommend staying up-to-date with the latest versions to benefit from improvements and security patches.'
-}]
+}];
+
+export const packages = {
+    monthly: {
+        price:{
+            basic:'$20',
+            business:'$30',
+            enterprise:'$50'
+        },
+        options: [{
+            name:'Unlimited Transactions',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Multi Outlet',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Report Featured',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Inventory Management',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Direct report & teamreview',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Emplovee Management System',
+            basic:false,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'CRM And Promotion Features',
+            basic:false,
+            business:false,
+            enterprise:true,
+        },
+        {
+            name:'Third Party Application Integration',
+            basic:false,
+            business:false,
+            enterprise:true,
+        }]
+    },
+    annually: {
+        price:{
+            basic:'$200',
+            business:'$300',
+            enterprise:'$500'
+        },
+        options: [{
+            name:'Unlimited Transactions',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Multi Outlet',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Report Featured',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Inventory Management',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'Direct report & teamreview',
+            basic:true,
+            business:false,
+            enterprise:true,
+        },
+        {
+            name:'Emplovee Management System',
+            basic:true,
+            business:true,
+            enterprise:true,
+        },
+        {
+            name:'CRM And Promotion Features',
+            basic:false,
+            business:false,
+            enterprise:true,
+        },
+        {
+            name:'Third Party Application Integration',
+            basic:true,
+            business:true,
+            enterprise:true,
+        }]
+    }
+}

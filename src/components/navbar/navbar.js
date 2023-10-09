@@ -1,3 +1,8 @@
+/*
+    Component Name : Navbar
+    Usage: Header Navigation
+*/
+
 'use client'
 
 import React, { useState } from 'react';

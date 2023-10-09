@@ -1,3 +1,8 @@
+/*
+    Component Name : Chart
+    Usage: Bar Chart in Home Page
+*/
+
 "use client"
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, Tooltip, PointElement, LineElement, BarElement} from "chart.js";
