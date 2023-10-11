@@ -56,7 +56,7 @@ export const Heroarea = () => {
 							</div>
 						</a>
 					</div>
-					<Image className={styles['hero-banner']} src='/assets/hero-area-banner.png' width={1140} height={559} priority={true} alt='Banner'/>
+					<Image className={styles['hero-banner']} src='/assets/hero-area-banner.png' width={900} height={559} priority={true} alt='Banner'/>
 				</div>
 				<div className={styles['hero-item-right']}>
 					<div className={styles['chart-container']}>
